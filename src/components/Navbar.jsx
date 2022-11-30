@@ -2,7 +2,7 @@
 const Navbar = ({navLinks, openMobileNav, setOpenMobileNav}) => { 
 
   return (
-    <nav className="flex justify-between min-w-full">
+    <nav className="flex justify-between min-w-full  z-10">
         <div className="">
             <h1 className="md:text-5xl md:pl-6 text-4xl p-4" style={{fontFamily: 'Staatliches, cursive'}}>Jashawn Rogers</h1>
         </div>
@@ -31,7 +31,8 @@ const Navbar = ({navLinks, openMobileNav, setOpenMobileNav}) => {
         <ul className="hidden md:flex" style={{fontFamily: 'Staatliches, cursive'}}>
           {
             navLinks.map((link) => (
-              <li key={link.name} className="md:p-3 cursor-pointer md:flex md:items-center py-5 text-2xl hover:text-gray-800">
+
+              <li key={link.name} className=" z-10 md:p-3 cursor-pointer md:flex md:items-center py-5 text-2xl hover:text-gray-800">
                 <a className="after:absolute after:z-[-1] after:mix-blend-multiply" href={link.path}>{link.name}</a>
               </li>
             ))
