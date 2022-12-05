@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import MenuOverlay from "./components/MenuOverlay";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 
 import memoji from "./images/memojiBigger2.png";
 
@@ -20,7 +21,7 @@ function App() {
 
   return (
     <div className="text-white bg-black h-full">
-      <div className="w-full h-full relative">
+      {/* <div className="w-full h-full relative">
         <ul className="squares ">
           <li></li>
           <li></li>
@@ -32,7 +33,7 @@ function App() {
           <li></li>
           <li></li>
           <li></li>
-        </ul>
+        </ul> */}
 
         <Navbar
           navLinks={navLinks}
@@ -47,7 +48,8 @@ function App() {
         <Hero memoji={memoji} />
         <Projects />
         <Skills />
-      </div>
+        <Contact />
+      {/* </div> */}
     </div>
   );
 }
