@@ -1,9 +1,10 @@
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
-import { Card, Elevation, Button } from "@blueprintjs/core"
+import { Card, Elevation } from "@blueprintjs/core"
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup/dist/yup.js'
 import { ToastContainer, toast } from 'react-toastify';
+import StyledButton from './StyledButton'
 import 'react-toastify/dist/ReactToastify.css';
 import * as yup from 'yup'
 
@@ -76,12 +77,7 @@ const Contact = () => {
                 <label className='pt-4'>Message</label>
                 <textarea className='w-full py-4 border-b-2 border-solid border-black rounded-md' {...register("message")}/>
                 {errors.message && <p className='py-3 text-red-600 text-md'>{errors.message?.message}</p>}
-                <Button 
-                    type='submit'
-                    className="p-3 mt-6"
-                >
-                   Send
-                </Button>
+                <StyledButton cname="p-3 mt-6" type="submit"> Send </ StyledButton>             
             </form>
         </Card>
         <div>

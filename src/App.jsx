@@ -21,20 +21,6 @@ function App() {
 
   return (
     <div className="text-white bg-black h-full">
-      {/* <div className="w-full h-full relative">
-        <ul className="squares ">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul> */}
-
         <Navbar
           navLinks={navLinks}
           openMobileNav={openMobileNav}
@@ -49,7 +35,6 @@ function App() {
         <Projects />
         <Skills />
         <Contact />
-      {/* </div> */}
     </div>
   );
 }

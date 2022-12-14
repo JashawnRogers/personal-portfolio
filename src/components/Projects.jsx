@@ -1,10 +1,34 @@
 import portfolioData from "../data/projectInfo"
 import ProjectItem from "./ProjectItem"
+import { motion, useAnimation } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+import { useEffect } from 'react'
 
 const Projects = () => {
+
+  const {ref, inView} = useInView({
+    threshold: 0.3
+  });
+  const animation = useAnimation()
+
+  useEffect(() => {
+    if(inView){
+      animation.start({
+        y: '-100vh',
+        transition: {
+          type: 'spring', duration: 1, bounce: 0.3
+        }
+      })
+    } else {
+      animation.start({y: '100vh'})
+    }
+  }, [inView])
+
   return (
-    <section className='flex h-screen flex-col md:flex-row items-center justify-center lg:px-6 z-20 bg-black pb-4'>
-       <article className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:w-[70vw] lg:w-screen gap-4 justify-center pb-4'>
+    <section ref={ref} className='flex h-screen flex-col md:flex-row items-center justify-center lg:px-6 z-20 bg-black pb-4'>
+       <motion.article className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:w-[70vw] lg:w-screen gap-4 justify-center pb-4'
+        // animate={animation}
+       >
             {portfolioData.map((project) => (
                 <ProjectItem
                 key={project.title} 
@@ -16,7 +40,7 @@ const Projects = () => {
                 description={project.description}
                 />
             ))}
-       </article>
+       </motion.article>
     </section>
   )
 }
