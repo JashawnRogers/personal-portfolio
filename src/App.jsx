@@ -7,6 +7,7 @@ import MenuOverlay from "./components/MenuOverlay";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 import memoji from "./images/memojiBigger2.png";
 
@@ -14,6 +15,7 @@ function App() {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "Projects", path: "/" },
+    { name: "Skills", path: "/" },
     { name: "Contact", path: "/" },
   ];
 
@@ -31,10 +33,13 @@ function App() {
           openMobileNav={openMobileNav}
           setOpenMobileNav={setOpenMobileNav}
         />
-        <Hero memoji={memoji} />
+        <Hero memoji={memoji}
+          navLinks={navLinks}
+        />
         <Projects />
         <Skills />
         <Contact />
+        <Footer />
     </div>
   );
 }

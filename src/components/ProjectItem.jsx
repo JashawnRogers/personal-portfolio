@@ -1,12 +1,12 @@
-import { Card, Elevation, Button, Colors } from "@blueprintjs/core"
+import { Card, Elevation, Colors } from "@blueprintjs/core"
 
 const ProjectItem = ({ title, imgUrl, stack, github, liveSite, description }) => {
   return (
-    <Card elevation={Elevation.TWO} className="text-black rounded-2xl flex flex-col flex-grow-1" style={{fontFamily: 'Staatliches'}}>
+    <Card elevation={Elevation.TWO} className="text-black rounded-2xl flex flex-col flex-grow-1 gap-2" style={{fontFamily: 'Staatliches'}}>
         <img 
             src={imgUrl} 
             alt={title} 
-            className="w-full h-36 md:h-48 object-cover cursor-pointer"
+            className="w-full h-full md:h-48 object-contain cursor-pointer"
             />
         <h5 className="text-3xl md:pb-3"><span>{title}</span></h5>
         <p className="py-3 text-xl text-center">
@@ -19,10 +19,10 @@ const ProjectItem = ({ title, imgUrl, stack, github, liveSite, description }) =>
                 </span>
             ))}
         </p>
-        <p className="indent-3 pb-3 text-lg max-h-38">{description}</p>
+        <p className="indent-3 pb-3 text-lg h-36">{description}</p>
         <footer className="flex justify-center place-items-baseline pt-3 gap-x-6 ">
-            <Button style={{background: Colors.GREEN3}} href={github} className="rounded-full" >View code</Button>
-            <Button style={{background: Colors.GREEN3}} href={liveSite} className="rounded-full">View live site</Button>
+            <a style={{background: Colors.GREEN3}} href={github} target="_blank" rel='noreferrer' className=" p-3 mt-3 rounded-full focus:decoration-black" >View code</a>
+            <a style={{background: Colors.GREEN3}} href={liveSite} target="_blank" rel='noreferrer' className="p-3 mt-3 rounded-full focus:decoration-black">View live site</a>
         </footer>
     </Card>
   )

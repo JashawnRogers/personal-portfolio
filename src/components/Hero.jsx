@@ -3,7 +3,7 @@ import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { useEffect } from 'react'
 
-const Hero = ({memoji}) => {
+const Hero = ({memoji, navLinks}) => {
   const words = [' Jashawn', ' Resourceful' , ' Hardworking', ' a Front-End Developer', ' a Music Enthusiast']
 
   const {ref, inView} = useInView({
@@ -34,7 +34,7 @@ const Hero = ({memoji}) => {
   }, [inView])
   
   return (
-    <header ref={ref} className='bg-black h-screen grid md:grid-cols-2 ' style={{fontFamily: 'Staatliches'}}>
+    <header ref={ref} className='bg-black h-screen grid md:grid-cols-2 ' style={{fontFamily: 'Staatliches'}} id="Home">
         <motion.div className="flex justify-center items-center"
           animate={animation}
         >

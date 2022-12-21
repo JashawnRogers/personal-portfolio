@@ -1,9 +1,10 @@
+import { Link } from "react-scroll"
 
 const Navbar = ({navLinks, openMobileNav, setOpenMobileNav}) => { 
 
   return (
-    <nav className="flex justify-between min-w-full  z-10">
-        <div className="">
+    <nav className="flex justify-between min-w-full z-10 sticky top-0 bg-black">
+        <div>
             <h1 className="md:text-5xl md:pl-6 text-4xl p-4" style={{fontFamily: 'Staatliches, cursive'}}>Jashawn Rogers</h1>
         </div>
         <button
@@ -32,14 +33,24 @@ const Navbar = ({navLinks, openMobileNav, setOpenMobileNav}) => {
           {
             navLinks.map((link) => (
 
-              <li key={link.name} className=" z-10 md:p-3 cursor-pointer md:flex md:items-center py-5 text-2xl hover:text-gray-800">
-                <a className="after:absolute after:z-[-1] after:mix-blend-multiply" href={link.path}>{link.name}</a>
+              <li key={link.name} className="md:p-3 cursor-pointer md:flex md:items-center py-5 text-2xl">
+                <Link
+                activeClass="active"
+                to={link.name}
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                className="after:absolute after:z-[-1] after:mix-blend-multiply hover:text-green-700"
+                >
+                {link.name}
+                </Link>
               </li>
             ))
           }
-          <li className="p-3 cursor-pointer flex justify-center  hover:text-gray-800 ">
+          {/* <li className="p-3 cursor-pointer flex justify-center  hover:text-gray-800 ">
               <button className="text-3xl"><ion-icon name="sunny-outline"></ion-icon></button>
-          </li>
+          </li> */}
         </ul>
     </nav>
   )

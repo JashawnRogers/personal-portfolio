@@ -25,7 +25,7 @@ const Projects = () => {
   }, [inView])
 
   return (
-    <section ref={ref} className='flex h-screen flex-col md:flex-row items-center justify-center lg:px-6 z-20 bg-black pb-4'>
+    <section ref={ref} className='flex flex-col md:flex-row items-center justify-center lg:px-6 bg-black pb-4' id="Projects">
        <motion.article className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:w-[70vw] lg:w-screen gap-4 justify-center pb-4'
         // animate={animation}
        >
