@@ -1,5 +1,6 @@
 import CounterImg from "../images/counterSC1.PNG";
 import PortfolioImg from "../images/portfolioSC.PNG";
+import ConstructionImg from "../images/under-construction.jpg";
 
 const portfolioData = [
   {
@@ -19,6 +20,14 @@ const portfolioData = [
     liveSite: " ",
     description:
       "In this application, I was able to get comfortable building with React.js. From using component based code, to props, rendering lists, forms, and hooks.  ",
+  },
+  {
+    title: "D.B. Consulting",
+    imgUrl: ConstructionImg,
+    stack: [" React.js,"],
+    github: "",
+    liveSite: "",
+    description: "Currently creating Web App for client with backend support.",
   },
 ];
 

@@ -59,9 +59,9 @@ const Contact = () => {
 
 
   return (
-    <section className='w-full flex justify-center items-center' style={{fontFamily: 'Staatliches'}} id="Contact">
+    <section className='w-full flex justify-center items-center pt-14' style={{fontFamily: 'Staatliches'}} id="Contact">
         
-        <Card  className="md:min-w-[40rem] md:min-h-[20rem] rounded-2xl">
+        <Card  className="md:min-w-[40rem] min-w-[20rem] md:min-h-[20rem] rounded-2xl">
             <div className="">
                 <h2 className='text-center text-3xl text-black pb-6'>Let's work!</h2>
             </div>

@@ -5,7 +5,7 @@ const Navbar = ({navLinks, openMobileNav, setOpenMobileNav}) => {
   return (
     <nav className="flex justify-between min-w-full z-10 sticky top-0 bg-black">
         <div>
-            <h1 className="md:text-5xl md:pl-6 text-4xl p-4" style={{fontFamily: 'Staatliches, cursive'}}>Jashawn Rogers</h1>
+            <h1 className="md:text-5xl md:pl-6 text-2xl p-4" style={{fontFamily: 'Staatliches, cursive'}}>Jashawn Rogers</h1>
         </div>
         <button
           className="md:hidden flex pl-40 py-8 z-20 relative w-10 h-10 text-white focus:outline-none"
@@ -39,7 +39,7 @@ const Navbar = ({navLinks, openMobileNav, setOpenMobileNav}) => {
                 to={link.name}
                 spy={true}
                 smooth={true}
-                offset={-50}
+                offset={-40}
                 duration={500}
                 className="after:absolute after:z-[-1] after:mix-blend-multiply hover:text-green-700"
                 >
