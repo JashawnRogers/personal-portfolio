@@ -31,7 +31,7 @@ const Hero = ({memoji, navLinks}) => {
       animation2.start({x: '100vw'})
 
     }
-  }, [inView])
+  }, [animation, animation2, inView])
   
   return (
     <header ref={ref} className='bg-black h-screen grid md:grid-cols-2 ' style={{fontFamily: 'Staatliches'}} id="Home">
@@ -60,7 +60,7 @@ const Hero = ({memoji, navLinks}) => {
               </span>
             </h1> 
             <p className='text-2xl pt-10 text-center leading-16'>
-              As a front-end developer, I love providing solutions to problems that reuqire thinking outside of the box. In my spare time, I enjoy blasting music and watching motorcycle videos on YouTube until I get my own!
+              As a front-end developer, I love providing solutions to problems that require attention to detail and thinking outside of the box. In my spare time, I enjoy finding new music and watching motorcycle videos on YouTube until I get my own!
             </p> 
         </motion.div>
     </header>
