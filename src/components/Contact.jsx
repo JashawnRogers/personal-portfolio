@@ -63,7 +63,7 @@ const Contact = () => {
         
         <Card  className="md:min-w-[40rem] min-w-[20rem] md:min-h-[20rem] rounded-2xl">
             <div className="">
-                <h2 className='text-center text-3xl text-black pb-6'>Let's work!</h2>
+                <h2 className='text-center text-3xl text-black pb-6'>Looking forward to hearing from you!</h2>
             </div>
 
             <form ref={form} onSubmit={handleSubmit(onSubmit)} className=" flex flex-col justify-center px-10 items-start text-black">

@@ -5,10 +5,9 @@ import {
   SiReact,
   SiTailwindcss,
   SiBootstrap,
-  SiJquery,
 } from "react-icons/si";
 
-import { FaGitSquare } from "react-icons/fa";
+import { FaGitSquare, FaGoogle } from "react-icons/fa";
 
 const skillsArr = [
   {
@@ -40,8 +39,8 @@ const skillsArr = [
     tooltip: "Git",
   },
   {
-    icon: SiJquery,
-    tooltip: "Jquery",
+    icon: FaGoogle,
+    tooltip: "Googling",
   },
 ];
 

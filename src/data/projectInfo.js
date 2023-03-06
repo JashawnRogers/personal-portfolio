@@ -1,6 +1,6 @@
 import CounterImg from "../images/counterSC1.PNG";
 import PortfolioImg from "../images/portfolioSC.PNG";
-import ConstructionImg from "../images/under-construction.jpg";
+import musicImg from "../images/music-app.PNG";
 
 const portfolioData = [
   {
@@ -17,17 +17,18 @@ const portfolioData = [
     imgUrl: PortfolioImg,
     stack: [" React,", " Tailwind CSS"],
     github: "https://github.com/JashawnRogers/personal-portfolio",
-    liveSite: " ",
+    liveSite: "https://jashawnrogers.com/",
     description:
       "In this application, I was able to get comfortable building with React.js. From using component based code, to props, rendering lists, forms, and hooks.  ",
   },
   {
-    title: "D.B. Consulting",
-    imgUrl: ConstructionImg,
-    stack: [" React.js,"],
-    github: "",
+    title: "Music Streaming App",
+    imgUrl: musicImg,
+    stack: [" React, Express.js, React Bootstrap"],
+    github: "https://github.com/JashawnRogers/iheartmusic",
     liveSite: "",
-    description: "Currently creating Web App for client with backend support.",
+    description:
+      "This application allows you to stream music from Spotify and modify your library using Spotify's API. The tools used were express to manage api requests as well as multiple npm libraries such as spotify-web-api and lyrics-finder.",
   },
 ];
 
