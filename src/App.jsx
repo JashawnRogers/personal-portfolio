@@ -35,8 +35,11 @@ function App() {
         <Hero memoji={memoji}
           navLinks={navLinks}
         />
+        <h2 className="text-center text-4xl ml-6 mb-6" style={{fontFamily: 'Staatliches'}}>Projects</h2>
         <Projects />
+        <h2 className="text-center text-4xl ml-6" style={{fontFamily: 'Staatliches'}}>Skills</h2>
         <Skills />
+        <h2 className="text-center text-4xl ml-6" style={{fontFamily: 'Staatliches'}}>Contact</h2>
         <Contact />
         <Footer />
     </div>

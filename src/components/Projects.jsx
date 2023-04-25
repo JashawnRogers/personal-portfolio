@@ -31,7 +31,8 @@ const Projects = () => {
        >
             {portfolioData.map((project) => (
                 <ProjectItem
-                key={project.title} 
+                key={project.title}
+                vidUrl={project.vidUrl}
                 imgUrl={project.imgUrl}
                 title={project.title}
                 stack={project.stack}

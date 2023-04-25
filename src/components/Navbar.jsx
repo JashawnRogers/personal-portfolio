@@ -48,9 +48,6 @@ const Navbar = ({navLinks, openMobileNav, setOpenMobileNav}) => {
               </li>
             ))
           }
-          {/* <li className="p-3 cursor-pointer flex justify-center  hover:text-gray-800 ">
-              <button className="text-3xl"><ion-icon name="sunny-outline"></ion-icon></button>
-          </li> */}
         </ul>
     </nav>
   )

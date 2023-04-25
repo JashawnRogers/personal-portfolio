@@ -1,6 +1,6 @@
 import CounterImg from "../images/counterSC1.PNG";
-import PortfolioImg from "../images/portfolioSC.PNG";
-import musicImg from "../images/music-app.PNG";
+import WeatherDashImg from "../images/weather-dash.PNG";
+import MusicVideo from "../videos/musicAppVideo.mp4";
 
 const portfolioData = [
   {
@@ -13,20 +13,20 @@ const portfolioData = [
       "This item counter was ultimately created to improve the workflow at my current job. More specifically, this application allows my team and I to easily track and manage completed work throughout our shift to increase our productivity.",
   },
   {
-    title: "Personal Portfolio",
-    imgUrl: PortfolioImg,
-    stack: [" React,", " Tailwind CSS"],
-    github: "https://github.com/JashawnRogers/personal-portfolio",
-    liveSite: "https://jashawnrogers.com/",
+    title: "Weather Dashboard",
+    imgUrl: WeatherDashImg,
+    stack: [" React,", " Boostrap"],
+    github: "https://github.com/JashawnRogers/react-weather-dash",
+    liveSite: "https://rogersweatherdashboard.netlify.app",
     description:
-      "In this application, I was able to get comfortable building with React.js. From using component based code, to props, rendering lists, forms, and hooks.  ",
+      "Weather dashboard utilizing open-weather and Google Maps API. Displays various weather data to the user including a 5 day forecast.",
   },
   {
     title: "Music Streaming App",
-    imgUrl: musicImg,
+    vidUrl: MusicVideo,
     stack: [" React, Express.js, React Bootstrap"],
     github: "https://github.com/JashawnRogers/iheartmusic",
-    liveSite: "",
+    // liveSite: "",
     description:
       "This application allows you to stream music from Spotify and modify your library using Spotify's API. The tools used were express to manage api requests as well as multiple npm libraries such as spotify-web-api and lyrics-finder.",
   },
