@@ -10,7 +10,7 @@ const portfolioData = [
     github: "https://github.com/JashawnRogers/counterV2",
     liveSite: "https://verratasktracker.com/",
     description:
-      "Verra Task Tracker is an online application designed for employees to conveniently record the volume of completed work. Users can create an account to manage their task records, which are stored in a database using Google Firebase. This project provides a user-friendly interface for adding and deleting task records.",
+      "Verra Task Tracker is an online application designed for employees to conveniently record the volume of completed work. Users can create an account to manage their tasks, through adding and deleting records that are stored via Google Firebase.",
   },
   {
     title: "Weather Dashboard",
