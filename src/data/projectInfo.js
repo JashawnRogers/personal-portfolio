@@ -1,16 +1,16 @@
-import CounterImg from "../images/counterSC1.PNG";
 import WeatherDashImg from "../images/weather-dash.PNG";
+import VRRMTrackerImg from "../images/verraTaskTracker.PNG";
 import MusicVideo from "../videos/musicAppVideo.mp4";
 
 const portfolioData = [
   {
-    title: "Item Counter",
-    imgUrl: CounterImg,
-    stack: [" HTML,", " Bootstrap,", " Javascript"],
-    github: "https://github.com/JashawnRogers/counter",
-    liveSite: "https://jashawnrogers.github.io/counter/",
+    title: "Verra Task Tracker",
+    imgUrl: VRRMTrackerImg,
+    stack: [" HTML,", " CSS,", " Javascript,", "Google Firebase"],
+    github: "https://github.com/JashawnRogers/counterV2",
+    liveSite: "https://verratasktracker.com/",
     description:
-      "This item counter was ultimately created to improve the workflow at my current job. More specifically, this application allows my team and I to easily track and manage completed work throughout our shift to increase our productivity.",
+      "Verra Task Tracker is an online application designed for employees to conveniently record the volume of completed work. Users can create an account to manage their task records, which are stored in a database using Google Firebase. This project provides a user-friendly interface for adding and deleting task records.",
   },
   {
     title: "Weather Dashboard",
