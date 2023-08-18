@@ -59,8 +59,8 @@ const Contact = () => {
 
 
   return (
-    <section className='w-full flex justify-center items-center pt-14' style={{fontFamily: 'Staatliches'}} id="Contact">
-        
+    <section className='sm:mt-48 md:mt-14 w-4/5 mx-auto flex flex-col justify-center items-center pt-14' style={{fontFamily: 'Staatliches'}} id="Contact">
+        <h2 className=" text-center text-4xl ml-6 mb-6" style={{fontFamily: 'Staatliches'}}>Contact</h2>
         <Card  className="md:min-w-[40rem] min-w-[20rem] md:min-h-[20rem] rounded-2xl">
             <div className="">
                 <h2 className='text-center text-3xl text-black pb-6'>Looking forward to hearing from you!</h2>
@@ -77,7 +77,7 @@ const Contact = () => {
                 <textarea className='w-full py-4 border-b-2 border-solid border-black rounded-md' {...register("message")}/>
                 {errors.message && <p className='py-3 text-red-600 text-md'>{errors.message?.message}</p>}
                 <div className="">
-                  <button style={{background: Colors.GREEN3}} className="p-3 mt-3 rounded-full" type="submit"> Send </button>
+                  <button style={{background: Colors.GREEN3, fontFamily: 'Roboto'}} className="p-3 mt-3 rounded-full" type="submit"> Send </button>
                 </div>           
             </form>
         </Card>
